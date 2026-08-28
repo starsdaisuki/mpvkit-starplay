@@ -1,0 +1,32 @@
+version = 1
+approved_emails = [
+  "148686572+starsdaisuki@users.noreply.github.com",
+  "noreply@openai.com",
+  # Public upstream author/copyright addresses retained in FFmpeg headers.
+  "Reimar.Doeffinger@gmx.de",
+  "baptiste.coudurier@gmail.com",
+  "clement.boesch@smartjog.com",
+  "jamrial@gmail.com",
+  "jeebjp@gmail.com",
+  "justin.ruggles@gmail.com",
+  "kevin.j.wheatley@gmail.com",
+  "leo.izen@gmail.com",
+  "mans@mansr.com",
+  "marco@gnu.org",
+  "michaelni@gmx.at",
+  "neil.birkbeck@gmail.com",
+  "pal@palemieux.com",
+  "quinkblack@foxmail.com",
+  "rdm4@martellventures.com",
+  "rsbultje@gmail.com",
+  "tdskywalker@gmail.com",
+  "toqsxw@outlook.com",
+  "vacingfang@tencent.com",
+  "vittorio.giovara@gmail.com",
+  "zane@zanevaniperen.com",
+]
+approved_ips = []
+approved_uuids = [
+  # Public nil AVUUID constant documented by FFmpeg's uuid.h.
+  "2fceebd0-7017-433d-bafb-d073a7116696",
+]

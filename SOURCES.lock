@@ -1,0 +1,35 @@
+# Exact build inputs for 1.0.0-starplay.1
+
+This file records the source revisions and prebuilt dependency archives used by the release.
+SHA-256 values apply to the `*-all.zip` inputs downloaded by MPVKit's build scripts.
+
+## Core source
+
+| Component | Revision |
+|---|---|
+| MPVKit | `288527dffbc6d3e63cce147fc7b520c64a791603` |
+| mpv | `41f6a645068483470267271e1d09966ca3b9f413` (`v0.41.0`) |
+| FFmpeg | `38b88335f99e76ed89ff3c93f877fdefce736c13` (`n8.1.2`) |
+
+## Prebuilt dependency inputs
+
+| Input | Release | SHA-256 |
+|---|---:|---|
+| OpenSSL | 3.3.5 | `8bc37424aa98fdeac17fd00fbeea7b784a39f1f800cc7f9e0c948d3b169c6f2f` |
+| libunibreak aggregate | 0.17.5 | `a7a9c0afa36e2301eec583e5575c30c1609357045d718565d06faf93abc56617` |
+| FreeType aggregate | 0.17.5 | `d5fb41dd3d66c6e433b389a398571b51b8d65f3f9e81f10ee61d5434a647749e` |
+| FriBidi aggregate | 0.17.5 | `7ae8cf8c8b16a8b4ebc004f3368044d9baf8454398d18d9e8bc37964b04a2fe6` |
+| HarfBuzz aggregate | 0.17.5 | `ff67179fb84a9a0f34b2ba276c4028823fecd90315cf18496be400cdfc768a3e` |
+| libass | 0.17.5 | `d5e4b6046d0a4198fb97083816348b2229071749de8c429747a9558c325a1d3a` |
+| libbluray | 1.4.0 | `c0302f43258ba41d9661dea0be4a7c9c1dd59d30d284ecfbf7319157c8e8a8de` |
+| uavs3d | 1.2.1-fix | `8644c7a8182679dbe762b522356606220bb6d2196a5ec65511eda42ef48b3e7a` |
+| libdovi | 3.3.2 | `81b85386016a012391c473674ef96e4e494fa76aef2f7b6c102a335e844644f8` |
+| MoltenVK | 1.4.2 | `551bf9ee4e6fe1f9a148a6aef8eff5e5e6e0c0be9dedda2405812023d4a38c60` |
+| shaderc | 2025.5 | `1079da73a292e5b2cea6a02fa2208c4935ead79a98043f81708424510e0ab53f` |
+| Little CMS | 2.17 | `8c118b2c04e2440ecf25ffebfa7952ebb09aba83a71378e3b9ed45dae3a6115a` |
+| libplacebo | 7.360.1 | `cdb8a07563bca119ca909ab4a3503825c27678736cdab294338b0a7dbe2cf35c` |
+| dav1d | 1.5.3 | `5d9ca131372bc9513100dbc43a59582ad1cf7acf6136ad4e6fecd63dc0075d82` |
+| uchardet | 0.0.8 | `21407ffd33ce5550f7adf0759c268ac3c8022a90f80b2a9a25e8273fd27814bb` |
+
+LuaJIT is not part of the published iOS package. The build script retains upstream support
+for other workflows, but the `1.0.0-starplay.1` Swift package declares iOS only.
