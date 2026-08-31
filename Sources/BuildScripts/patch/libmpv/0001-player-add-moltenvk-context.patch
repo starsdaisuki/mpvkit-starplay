@@ -58,10 +58,10 @@ index e75cb228f8d99462ccecf7780098ea97ae7cfe02..afc17284773204563f4c90b4860758e6
  #endif
 diff --git forkSrcPrefix/video/out/vulkan/context_moltenvk.m forkDstPrefix/video/out/vulkan/context_moltenvk.m
 new file mode 100644
-index 0000000000000000000000000000000000000000..445b907f795b24b8df80389394d4ae7b3f94c6e5
+index 0000000000000000000000000000000000000000..748be6eb58441711b6f2e1faf298675d8c87e1dc
 --- /dev/null
 +++ forkDstPrefix/video/out/vulkan/context_moltenvk.m
-@@ -0,0 +1,96 @@
+@@ -0,0 +1,112 @@
 +/*
 + * This file is part of mpv.
 + *
@@ -147,6 +147,22 @@ index 0000000000000000000000000000000000000000..445b907f795b24b8df80389394d4ae7b
 +
 +static int moltenvk_control(struct ra_ctx *ctx, int *events, int request, void *arg)
 +{
++    struct priv *p = ctx->priv;
++
++    switch (request) {
++    case VOCTRL_CHECK_EVENTS: {
++        CGSize s = p->layer.drawableSize;
++        int width = (int)s.width;
++        int height = (int)s.height;
++        if (width > 1 && height > 1 &&
++            (width != ctx->vo->dwidth || height != ctx->vo->dheight))
++        {
++            ra_vk_ctx_resize(ctx, width, height);
++            *events |= VO_EVENT_RESIZE;
++        }
++        return VO_TRUE;
++    }
++    }
 +    return VO_NOTIMPL;
 +}
 +

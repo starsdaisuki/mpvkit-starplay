@@ -13,7 +13,7 @@ Its mpv and FFmpeg binaries are built with OpenSSL, without GnuTLS, GMP, Nettle,
 ```swift
 .package(
     url: "https://github.com/starsdaisuki/mpvkit-starplay",
-    exact: "1.0.0-starplay.1"
+    exact: "1.0.0-starplay.2"
 )
 ```
 
@@ -25,7 +25,7 @@ The build requires macOS, Xcode, Swift, Homebrew, pkg-config, wget, nasm, Meson,
 The exact upstream inputs and their SHA-256 values are recorded in [`SOURCES.lock`](SOURCES.lock).
 
 ```bash
-make build platform=ios version=1.0.0-starplay.1
+make build platform=ios version=1.0.0-starplay.2
 ```
 
 The command produces iOS-device and iOS-simulator XCFramework archives in `dist/release/`.
@@ -35,8 +35,8 @@ FFmpeg and mpv retain build configuration paths in their public version strings.
 For a resumed build with all dependency archives already present under `dist/`:
 
 ```bash
-STARPLAY_ONLY_CORE=1 make build platform=ios version=1.0.0-starplay.1
-STARPLAY_ONLY_MPV=1 make build platform=ios version=1.0.0-starplay.1
+STARPLAY_ONLY_CORE=1 make build platform=ios version=1.0.0-starplay.2
+STARPLAY_ONLY_MPV=1 make build platform=ios version=1.0.0-starplay.2
 ```
 
 See [`VARIANT.md`](VARIANT.md) for the exact changes from upstream and

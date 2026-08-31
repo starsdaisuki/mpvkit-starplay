@@ -183,8 +183,8 @@ let package = Package(
 
         .binaryTarget(
             name: "Libmpv",
-            url: "https://github.com/starsdaisuki/mpvkit-starplay/releases/download/1.0.0-starplay.1/Libmpv.xcframework.zip",
-            checksum: "0fe335e4d34ee05877e39446f63745b30093f0e5887cb14cb5f1acae60e7a095"
+            url: "https://github.com/starsdaisuki/mpvkit-starplay/releases/download/1.0.0-starplay.2/Libmpv.xcframework.zip",
+            checksum: "34592405f7fde6e5582aeba56f4050edf236a8c969142fce818b78a94aff6011"
         ),
         //AUTO_GENERATE_TARGETS_END//
     ]

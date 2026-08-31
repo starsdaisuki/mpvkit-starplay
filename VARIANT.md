@@ -9,6 +9,7 @@ This snapshot makes the following deliberate changes to upstream MPVKit 1.0.0:
 - keeps mpv configured with `-Dgpl=false`;
 - disables mpv manpage generation for mobile library builds;
 - provides resume gates for rebuilding only FFmpeg+mpv or only mpv;
+- reports MoltenVK drawable-size changes through `VOCTRL_CHECK_EVENTS`, ignoring transient 1×1 sizes;
 - publishes an iOS-device and iOS-simulator package rather than claiming unsupported platforms.
 
 The release acceptance checks are:
