@@ -2,6 +2,7 @@ version = 1
 approved_emails = [
   "148686572+starsdaisuki@users.noreply.github.com",
   "noreply@openai.com",
+  "noreply@anthropic.com",
   # Public upstream author/copyright addresses retained in FFmpeg headers.
   "Reimar.Doeffinger@gmx.de",
   "baptiste.coudurier@gmail.com",
